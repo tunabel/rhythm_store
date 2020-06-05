@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rhythm House - Event - Event Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="../assets/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <!-- image fade -->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    
+    <!-- iCheck checkbox -->
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/flat/blue.css">
+    <!-- date picker -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/daterangepicker.css" />
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <link rel="shortcut icon" href="../assets/images/shop/favicon.ico" />
+  </head>
+  <body>
+
+  <div class="site-wrap">
+    <header class="site-navbar " role="banner">
+      <div class="site-navbar-top">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-2 col-md-3 order-1"></div>
+
+            <div class="col-8 col-md-6 mb-0 mb-md-0 order-2 order-md-1 text-center">
+              <div class="site-logo">
+                <a href="../index.html" class="js-logo-clone">Rhythm House</a>
+                <div>The Music Store of the Neighborhood</div>
+              </div>
+            </div>
+
+            <div class="col-2 col-md-3 order-3 order-md-2 text-right px-0">
+              <div class="site-top-icons">
+                <ul class="px-0">
+                  <li class="d-inline-block">
+                    <a href="../templates/cart.html" class="site-cart mr-2">
+                      <span class="icon icon-shopping_cart" style="font-size: 30px"></span>
+                      <span class="count">2</span>
+                    </a>
+                  </li>
+                  <li class="d-inline-block d-md-none ml-md-0 "><a href="#" class="site-menu-toggle js-menu-toggle mx-0"><span class="icon-menu"></span></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+    </header>
+    <nav class="site-navigation text-right text-md-left sticky-top bg-white border-bottom" role="navigation">
+      <div class="container pl-0">
+        <ul class="site-menu js-clone-nav d-none d-md-block">
+          <li class="active">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="has-children"><a href="#!">Music</a>
+            <ul class="dropdown">
+              <li><a href="../templates/music.html">Browse Music</a></li>
+              <li><a href="../templates/artists.html">Artists</a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <a href="#!">Prints</a>
+            <ul class="dropdown">
+              <li><a href="../templates/mags.html">Magazines</a></li>
+              <li><a href="../templates/mags.html">Books</a></li>
+            </ul>
+          </li>
+          <li class="has-children"><a href="#!">Events</a>
+            <ul class="dropdown">
+              <li><a href="../templates/events.html">Liveshows</a></li>
+              <li><a href="../templates/contests.html">Contests</a></li>
+            </ul>
+          </li>
+          <li  class="has-children"><a href="#!">About Us</a>
+            <ul class="dropdown">
+              <li><a href="../templates/about.html">About Rhythm House</a></li>
+              <li><a href="../templates/contact.html">Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="has-children" >
+            <a href="#!" class="" data-toggle="modal" data-target="#modalLogin"><span class="far fa-user-circle text-primary mr-2" ></span></a>
+            <ul class="dropdown">
+              <li><span class="dropdown-item-text my-2">Hello, User</span></li>
+              <div class="dropdown-divider"></div>
+              <li><a href="../templates/account.html"><span class="fas fa-user-cog mr-2" style="width: 20px"></span>My Account</a></li>
+              <li><a href="../templates/account.html"><span class="fas fa-file-invoice mr-2" style="width: 20px"></span>My Orders</a></li>
+              <li><a href="../templates/admin.html"><span class="fas fa-tools mr-2" style="width: 20px"></span>{Admin Site}</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a href="#"><span class="fas fa-sign-out-alt mr-2"></span>Log Out</a></li>
+            </ul>
+          </li>
+
+          <li class="has-children" style="float:right">
+            
+            <form class="form-inline" style="height:45px; width: 150px"  id="searchForm" action="../templates/result.html">
+              <input type="text" class="form-control border-0 font-italic w-75 mr-3" id="searchInput" placeholder="Search..." aria-label="Search" aria-describedby="Search">
+              <button class="fas fa-search border-0 bg-transparent p-0" type="submit" id="searchBtn"></button>
+            </form>
+            <ul class="dropdown advSearch-menu">
+              <li>
+                <a href="#" class="advSearch-menu-genre">
+                  <input class="form-check-input search-ckbox checkAll" type="checkbox" value="checkAll" id="checkAll">
+                  <label for="checkAll">All Filters</label>
+                </a></li>
+              <li>
+                <a href="#" class="advSearch-menu-genre border-top">
+                  <input class="form-check-input search-ckbox music-check" type="checkbox" value="" id="Music">
+                  <label class="form-check-label" for="Music">Music</label>
+                </a></li>
+              <li>
+                <a href="#">
+                  <input class="form-check-input search-ckbox music-check" type="checkbox" value="Rock" id="Rock">
+                  <label class="form-check-label" for="Rock">Rock</label>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <input class="form-check-input search-ckbox music-check" type="checkbox" value="Pop" id="Pop">
+                  <label class="form-check-label" for="Pop">Pop</label>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <input class="form-check-input search-ckbox music-check" type="checkbox" value="Jazz" id="Jazz">
+                  <label class="form-check-label" for="Jazz">Jazz</label>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <input class="form-check-input search-ckbox music-check" type="checkbox" value="Country" id="Country">
+                  <label class="form-check-label" for="Country">Country</label>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <input class="form-check-input search-ckbox music-check" type="checkbox" value="" id="Movie">
+                  <label class="form-check-label" for="Movie">Movie OST</label>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <input class="form-check-input search-ckbox music-check" type="checkbox" value="Kid" id="Kid">
+                  <label class="form-check-label" for="Kid">Kid Poems</label>
+                </a>
+              </li>
+              <!--  -->
+              <li class="border-top">
+                  <a href="#" class="advSearch-menu-genre">
+                    <input class="form-check-input search-ckbox artist-check" type="checkbox" value="" id="Artist">
+                    <label class="form-check-label" for="Artist">Artist</label>
+                  </a></li>
+                <li>
+                  <a href="#">
+                    <input class="form-check-input search-ckbox artist-check" type="checkbox" value="Solo" id="Solo">
+                    <label class="form-check-label" for="Solo">Solo Performer</label>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <input class="form-check-input search-ckbox artist-check" type="checkbox" value="Band" id="Band">
+                    <label class="form-check-label" for="Band">Band</label>
+                  </a>
+                </li>
+              <!--  -->
+              <li class="border-top">
+                  <a href="#" class="advSearch-menu-genre">
+                    <input class="form-check-input search-ckbox mag-check" type="checkbox" value="" id="Print">
+                    <label class="form-check-label" for="Print">Print</label>
+                  </a></li>
+                <li>
+                  <a href="#">
+                    <input class="form-check-input search-ckbox mag-check" type="checkbox" value="Local" id="Local">
+                    <label class="form-check-label" for="Local">National</label>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <input class="form-check-input search-ckbox mag-check" type="checkbox" value="Imported" id="Imported">
+                    <label class="form-check-label" for="Imported">Imported</label>
+                  </a>
+                </li>
+              <!--  -->
+              <li class="border-top">
+                <a href="#" class="advSearch-menu-genre">
+                  <input class="form-check-input search-ckbox" type="checkbox" value="Year" id="Year">
+                  <label class="form-check-label" for="Year">Release Year</label>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true" style="top: 150px">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Log In / Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body py-0">
+            <div class="row">
+              <div class="col-7 border-right py-3">
+                <form name="formLogin" action="">
+                  <div class="form-group">
+                    <label for="usernameLogin">Username: </label>
+                    <input type="text" class="form-control" id="usernameLogin" aria-describedby="usernameInput" placeholder="Enter username">
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordLogin">Password</label>
+                    <a href="#" class="text-right" style="float:right">Forgot your password?</a>
+                    <input type="password" class="form-control" id="passwordLogin" placeholder="Password">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberCheckLogin">
+                    <label class="form-check-label" for="rememberCheckLogin">Remember Me</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Log In</button>
+                </form>
+              </div>
+              <div class="col-5 bg-light py-3">
+                
+                <h6 class="border-bottom pb-2">Benefits of being a member of Rhythm Store</h6>
+                <ul class="pl-1 list-benefit" >
+                  <li>Sweet deals</li>
+                  <li>Faster purchases</li>
+                  <li>Bonus points accumulation for special prices
+                </ul>
+                <button class="btn btn-danger mt-1">Sign Up</button>
+              </div>
+            </div>  
+          
+          </div>
+       
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light">
+      <div class="container">
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb pl-0 mb-0 bg-light">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../templates/events.html">Events</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Event Title - Lorem ipsum dolor sit amet 2019</li>
+          </ol>
+        </div>       
+      </div>  
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-12">
+            <img src="../assets/images/events/event005.jpg" alt="Image" class="img-fluid img-thumbnail w-100" style="height: 300px">
+          </div>
+        </div>
+
+        <div class="row border-bottom">
+          <div class="col-12">
+            <div class="pb-3">
+              <h2 class="text-black">Event Title - Lorem ipsum dolor sit amet 2019</h2>
+              <a href="../templates/events.html">Liveshow</a>
+              <div class="h5 pt-3">
+                <i class="far fa-calendar-alt ml-1 mr-2" style="user-select: none; width:20px"></i>
+                <span class="text-black">Saturday, 21 September 2019 </span>
+              </div>
+              <div class="h5">
+                <i class="far fa-clock ml-1 mr-2" style="user-select: none; width:20px"></i>
+                <span class="text-black">7:30 PM - 22:30 PM</span>
+              </div>
+              <div class="h5">
+                <i class="far fa-compass ml-1 mr-2" style="user-select: none; width:20px">
+                </i><span class="text-black">&nbsp;Jawaharlal Nehru Stadium, Delhi, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-8 order-sm-2 order-lg-1">
+            <div class="mt-3"> 
+              <h5>Description</h5>
+              <div class="mb-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed tellus sapien. Cras venenatis vitae ligula sit amet ullamcorper. Ut metus nisi, venenatis a mi quis, porttitor suscipit turpis. Nunc scelerisque in metus at aliquet. Donec at nunc ac dui eleifend vulputate nec ac leo. Phasellus dictum sit amet purus a vestibulum. Nullam sit amet molestie dui. Donec sit amet justo a nisl feugiat malesuada blandit at tortor. Cras vel nulla sed justo malesuada pellentesque nec sit amet ipsum.</p>
+  
+                <p>Nunc vitae libero et enim aliquet pulvinar. Nam porta massa purus, sed dignissim augue porttitor ultrices. Nulla sed purus consectetur, pretium justo id, sodales nisl. Phasellus egestas eros vel dictum suscipit. Aenean ornare turpis odio, vitae ultrices purus dapibus porta. Donec egestas ligula ut porta tempus. Sed sagittis sagittis justo, nec sollicitudin arcu facilisis vel.</p>
+                    
+                <p>Fusce commodo nisi nisl, eu eleifend odio ultrices ac. Vivamus malesuada est lectus, eu blandit sem consectetur eget. Phasellus ornare tempor tortor, eget laoreet lorem tempus ut. Aenean non mi ac leo blandit cursus eget ut orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque rhoncus, leo vel sagittis eleifend, mauris mi porttitor nibh, ac mollis metus risus sed odio. Suspendisse potenti. Phasellus lacinia non sem eu ornare. Proin condimentum arcu vehicula lacinia luctus. Curabitur feugiat mauris at orci accumsan, et egestas ante sagittis. Mauris pulvinar ac mi ac ornare. Sed laoreet urna ipsum, eu porttitor orci malesuada a. Proin tristique quis sapien vitae hendrerit.</p>
+                
+                <div>
+                  <iframe class="w-100" height="300" src="https://www.youtube.com/embed/Lg2dqFCU67Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>    
+          </div>
+
+          <div class="col-12 col-lg-4 order-sm-1 order-lg-2">
+            <div class="mt-3">
+              <h5 >Ticket</h5>
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. </p>                        
+                                          
+              <div class="input-group mx-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-primary js-btn-minus" type="button">−</button>
+                </div>
+                <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" style="max-width:50px !important">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary js-btn-plus mr-2" type="button">+</button>
+                </div>
+                <div class="input-group-append">
+                  <a href="#" class="btn btn-primary btn-sm" role="button">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <h5 data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Participating Artists<i class="fas ml-2 artist-collapse"></i></h5>
+           
+              <div class="collapse " id="collapseExample">
+                <div class="card card-body p-0">
+                  <ul class="list-group list-group-flush ">
+                    <li class="list-group-item">
+                      <img src="../assets/images/artists/solo001.jpg" alt="..." class="rounded-circle mr-2" style="width:50px">
+                      <a href="#!" class="font-weight-bold">Artist Name</a>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="../assets/images/artists/solo002.jpg" alt="..." class="rounded-circle mr-2" style="width:50px">
+                      <a href="#!" class="font-weight-bold">Artist Name</a>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="../assets/images/artists/solo003.jpg" alt="..." class="rounded-circle mr-2" style="width:50px">
+                      <a href="#!" class="font-weight-bold">Artist Name</a>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="../assets/images/artists/solo004.jpg" alt="..." class="rounded-circle mr-2" style="width:50px">
+                      <a href="#!" class="font-weight-bold">Artist Name</a>
+                    </li>
+                    <li class="list-group-item">
+                      <img src="../assets/images/artists/solo005.jpg" alt="..." class="rounded-circle mr-2" style="width:50px">
+                      <a href="#!" class="font-weight-bold">Artist Name</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <footer class="site-footer border-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <span class="h4 mr-2 text-black">Follow Us</span>
+                  <a href="#!" class="fab fa-facebook-square text-info" style="font-size:24px"></a>
+                  <a href="#!" class="fab fa-twitter-square text-primary" style="font-size:24px"></a>
+                  <a href="#!" class="fab fa-instagram text-warning" style="font-size:24px"></a>
+                  <a href="#!" class="fab fa-youtube-square text-danger" style="font-size:24px"></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">                    
+                    <li><a href="#!">Wholesale Music Distribution</a></li>
+                    <li><a href="#!">Terms &amp; Conditions</a></li>
+                    <li><a href="#!">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><a href="../templates/account.html">Manage Account</a></li>
+                    <li><a href="#!">Forget Password</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <h3 class="footer-heading mb-4">Promo</h3>
+              <a href="../templates/music.html" class="block-6">
+                <img src="../assets/images/shop/sales_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
+                <h3 class="font-weight-light  mb-0">Discount on all 60's Vinyls</h3>
+                <p>Promo from Sep 15 &mdash; 25, 2019</p>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="block-5 mb-5">
+                <h3 class="footer-heading mb-4">Contact Info</h3>
+                <ul class="list-unstyled">
+                  <li class="address">789, Nai Sarak, Katra Asharfi, Chandni Chowk, New Delhi, Delhi 110006</li>
+                  <li class="phone"><a href="tel://91 11 2326 3595"> +91 11 2326 3595</a></li>
+                  <li class="email"><a href="mailto://rhythmstore@domain.com">rhythmstore@domain.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">   
+            </div>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+  
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- carousel -->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!-- image fade -->
+    <script src="../assets/js/aos.js"></script>
+    <!-- Checkbox -->
+    <script src="../assets/js/icheck.min.js"></script> 
+    <!-- date range picker -->
+    <script src="../assets/js/moment.min.js"></script>
+    <script src="../assets/js/daterangepicker.js"></script>
+  
+    <script src="../assets/js/main.js"></script>
+      
+    </body>
+  </html>
